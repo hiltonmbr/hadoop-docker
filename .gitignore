@@ -1,0 +1,5 @@
+*.DS_Store
+*.gz
+.venv
+hadoop_*
+code-server
