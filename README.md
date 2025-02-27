@@ -89,7 +89,7 @@ After setting up the environment:
 
 3. Select Kernel and install suggested extensions `Python` and `Jupyter`.
 
-4. Create a python virtual environment and select as Kernel:
+4. Select Kernel again and create a Python Virtual Environment (`.venv`).
 
 ## Contributing
 
