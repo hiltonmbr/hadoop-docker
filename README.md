@@ -30,7 +30,7 @@ Before running the project, make sure you have:
    Clone the repository to your local machine:
 
    ```bash
-   git clone https://your.repository.url/bigdata-hadoop.git
+   git clone https://github.com/hiltonmbr/bigdata-hadoop.git
    ```
 
 2. **Review Configurations:**

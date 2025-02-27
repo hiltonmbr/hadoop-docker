@@ -16,7 +16,6 @@ services:
     restart: unless-stopped
     networks:
       - dev
-
   namenode:
     image: apache/hadoop:3.3.6
     container_name: namenode
