@@ -40,13 +40,13 @@ Before running the project, make sure you have:
    Launch your Hadoop cluster using Docker Compose:
 
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
 4. **Verify Services:**
    Once started, check the status of all containers:
    ```bash
-   docker-compose ps
+   docker compose ps
    ```
 
 ## Stopping the Cluster
@@ -54,7 +54,7 @@ Before running the project, make sure you have:
 To stop the Hadoop cluster, run:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Accessing the Services
@@ -69,14 +69,14 @@ docker-compose down
   - Ensure Docker Desktop is running.
   - Inspect container logs for errors:
     ```bash
-    docker-compose logs
+    docker compose logs
     ```
 
 - **Service Access Issues:**
   - Verify that no firewall or network settings are blocking the required ports.
   - Confirm that all containers are running using:
     ```bash
-    docker-compose ps
+    docker compose ps
     ```
 
 ## Usage Example with Code-Server
