@@ -83,13 +83,20 @@ docker compose down
 
 After setting up the environment:
 
-1. Copy the notebook file `example.ipynb` to the shared workspace folder `./code-server/workspace/example.ipynb`
+1. Copy the notebook file `example.ipynb` to the shared workspace folder `./code-server/workspace/example.ipynb`.
 
-2. Open the notebook (`example.ipynb`) in your code-server interface to start working with Hadoop jobs.
+2. - Press `Ctrl + Shift + P` to open the command palette.
 
-3. Select Kernel and install suggested extensions `Python` and `Jupyter`.
+- Type "Python: Create a virtual environment" and select the option "Python: Create a virtual environment".
+- Select the option "Create a .venv in the current workspace" and press Enter.
+- Select the option "Python 3.12" and press Enter.
+- Wait for the virtual environment to be created.
 
-4. Select Kernel again and create a Python Virtual Environment (`.venv`).
+3. Open the notebook (`example.ipynb`) in your code-server interface to start working with Hadoop jobs.
+
+4. Select Kernel and install suggested extensions `Python` and `Jupyter`.
+
+5. Select Kernel again and create a Python Virtual Environment (`.venv`).
 
 ## Contributing
 
