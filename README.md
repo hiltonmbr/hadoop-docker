@@ -1,8 +1,8 @@
-# BigData-Hadoop Project
+# Hadoop on Docker Environment
 
 ## Overview
 
-BigData-Hadoop leverages Apache Hadoop to process and analyze large datasets. This project provides an easy way to deploy a Hadoop cluster using Docker containers and python language for study and experimentation.
+Apache Hadoop is used to process and analyze large datasets. This project provides an easy way to deploy a Hadoop cluster using Docker containers and python language for study and experimentation.
 
 ## Project Structure
 
