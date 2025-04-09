@@ -9,8 +9,7 @@ services:
       - SUDO_PASSWORD=test
       - DOCKER_MODS=linuxserver/mods:code-server-python3
     volumes:
-      - ./code-server:/config
-      - ./conf/start-code-server.sh:/start-code-server.sh
+      - ./shared-data:/config/workspace
     ports:
       - 8443:8443
     restart: unless-stopped
@@ -24,9 +23,7 @@ services:
     env_file:
       - ./.env
     volumes:
-      - ./hadoop_namenode:/opt/hadoop/data/nameNode
-      - ./hadoop_config:/opt/hadoop/etc/hadoop
-      - ./conf/start-hdfs.sh:/start-hdfs.sh
+      - ./shared-dat/hadoop:/opt/hadoop/etc/hadoop
     ports:
       - "9870:9870"
       - "8020:8020"
@@ -42,9 +39,7 @@ services:
     env_file:
       - ./.env
     volumes:
-      - ./hadoop_datanode1:/opt/hadoop/data/dataNode
-      - ./hadoop_config:/opt/hadoop/etc/hadoop
-      - ./conf/init-datanode.sh:/init-datanode.sh
+      - ./shared-dat/hadoop:/opt/hadoop/etc/hadoop
     depends_on:
       - namenode
     restart: unless-stopped
@@ -59,9 +54,7 @@ services:
     env_file:
       - ./.env
     volumes:
-      - ./hadoop_datanode2:/opt/hadoop/data/dataNode
-      - ./hadoop_config:/opt/hadoop/etc/hadoop
-      - ./conf/init-datanode.sh:/init-datanode.sh
+      - ./shared-dat/hadoop:/opt/hadoop/etc/hadoop
     depends_on:
       - namenode
     restart: unless-stopped
