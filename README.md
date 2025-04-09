@@ -1,4 +1,4 @@
-# Hadoop on Docker Environment
+# Hadoop Cluster on Docker Environment
 
 ## Overview
 
@@ -30,7 +30,7 @@ Before running the project, make sure you have:
    Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/hiltonmbr/bigdata-hadoop.git
+   git clone https://github.com/hiltonmbr/hadoop-docker.git
    ```
 
 2. **Review Configurations:**
