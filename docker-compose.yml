@@ -23,7 +23,7 @@ services:
     env_file:
       - ./.env
     volumes:
-      - ./shared-dat/hadoop:/opt/hadoop/etc/hadoop
+      - ./shared-data/hadoop:/opt/hadoop/etc/hadoop
     ports:
       - "9870:9870"
       - "8020:8020"
@@ -39,7 +39,7 @@ services:
     env_file:
       - ./.env
     volumes:
-      - ./shared-dat/hadoop:/opt/hadoop/etc/hadoop
+      - ./shared-data/hadoop:/opt/hadoop/etc/hadoop
     depends_on:
       - namenode
     restart: unless-stopped
@@ -54,7 +54,7 @@ services:
     env_file:
       - ./.env
     volumes:
-      - ./shared-dat/hadoop:/opt/hadoop/etc/hadoop
+      - ./shared-data/hadoop:/opt/hadoop/etc/hadoop
     depends_on:
       - namenode
     restart: unless-stopped
