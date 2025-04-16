@@ -30,7 +30,7 @@ services:
     restart: unless-stopped
     networks:
       - dev
-    command: ["/bin/bash", "/start-hdfs.sh"]
+    command: ["/bin/bash", "/opt/hadoop/etc/hadoop/start-hdfs.sh"]
   datanode1:
     image: apache/hadoop:3.3.6
     container_name: datanode1
@@ -45,7 +45,7 @@ services:
     restart: unless-stopped
     networks:
       - dev
-    command: ["/bin/bash", "/init-datanode.sh"]
+    command: ["/bin/bash", "/opt/hadoop/etc/hadoop/init-datanode.sh"]
   datanode2:
     image: apache/hadoop:3.3.6
     container_name: datanode2
@@ -60,7 +60,7 @@ services:
     restart: unless-stopped
     networks:
       - dev
-    command: ["/bin/bash", "/init-datanode.sh"]
+    command: ["/bin/bash", "/opt/hadoop/etc/hadoop/init-datanode.sh"]
   resourcemanager:
     image: apache/hadoop:3.3.6
     hostname: resourcemanager
